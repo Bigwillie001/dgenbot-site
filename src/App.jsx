@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Send, TrendingUp, BarChart3 } from 'lucide-react';
-import botPfp from './bot-pfp.jpg'; 
 
 const App = () => {
   const [price, setPrice] = useState("0.0000");
@@ -51,7 +50,7 @@ const App = () => {
         <div className="group relative mb-6">
           <div className="absolute -inset-1 bg-green-500 rounded-full blur opacity-75 animate-pulse"></div>
           <div className="relative w-36 h-36 md:w-64 md:h-64 rounded-full border-4 border-green-500 overflow-hidden bg-zinc-900">
-            <img src={botPfp} alt="DGENBOT" className="w-full h-full object-cover" onError={(e) => e.target.src = "/bot-pfp.jpg"} />
+            <img src="/bot-pfp.jpg" alt="DGENBOT" className="w-full h-full object-cover"/>
           </div>
         </div>
 
